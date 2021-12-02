@@ -143,6 +143,39 @@ a:hover{
 	background:rgba(177, 55, 36, 0.60); /*this uses opacity of 60% for the background color, changed nav hover color*/
 	border-radius: 15px;
 }
+
+.highlight::selection {
+	background: rgba(177, 55, 36, 0.30); /*selection color*/
+}
+
+.highlight::-moz-selection {
+	background: rgba(177, 55, 36, 0.30); /*selection color for gecko*/
+}
+
+#unselect { /*removes selection*/
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+	user-select: none;
+}
+
+::-webkit-scrollbar {
+	width: 10px; /*scrollbar width*/
+  }
+
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1; /*scrollbar background color*/
+  }
+   
+  ::-webkit-scrollbar-thumb {
+	background: rgba(177, 55, 36, 0.60); /*scrollbar color*/
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+	background: rgb(126, 39, 25); /*scrollbar hover color*/
+  }
     
     
 
