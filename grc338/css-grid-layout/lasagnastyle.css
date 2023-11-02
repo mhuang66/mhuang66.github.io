@@ -60,7 +60,7 @@ main {
     margin-bottom: 3em;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 4em;
+    grid-column-gap: 3em;
 }
 
 figcaption, li {
