@@ -4,6 +4,10 @@ html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
 
 body {
     background-color: #dddedd;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #222222;
 }
 
 header {
@@ -57,35 +61,20 @@ img {
 }
 
 main {
-    margin-bottom: 3em;
+    margin: 0em 3em 4em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 3em;
 }
 
-figcaption, li {
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #222222;
-}
-
 figcaption {
-    margin: 1em 2em;
+    margin: 2em 2.5em;
     font-style: italic;
 }
 
 section {
     border-top: 3px solid #ef8e34;
     margin-top: 3em;
-}
-
-section.ingredients {
-    margin-left: 3em;
-}
-
-section.directions {
-    margin-right: 3em;
 }
 
 li {
