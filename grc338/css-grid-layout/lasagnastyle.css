@@ -60,6 +60,7 @@ main {
     margin-bottom: 3em;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4em;
 }
 
 figcaption, li {
@@ -76,7 +77,15 @@ figcaption {
 
 section {
     border-top: 3px solid #ef8e34;
-    margin: 3em 3em;
+    margin-top: 3em;
+}
+
+section.ingredients {
+    margin-left: 3em;
+}
+
+section.directions {
+    margin-right: 3em;
 }
 
 li {
