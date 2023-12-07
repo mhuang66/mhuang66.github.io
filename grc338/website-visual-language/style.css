@@ -140,10 +140,6 @@ address {
 	color: #ECB851;
 	}
 
-address.home {
-    color: #242424;
-}
-
 footer p {
 	margin: 0;
 }
@@ -171,6 +167,16 @@ nav ul li.selected a {
     article {
         width: 60em;
         margin: auto;
+    }
+
+    main.home {
+        width: 60em;
+        text-align: center;
+        margin: auto;
+    }
+
+    p.slogan {
+        margin: 2em 0em 1.5em;
     }
 
     main.menu ul {
