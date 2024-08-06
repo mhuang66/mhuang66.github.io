@@ -44,6 +44,7 @@ form h3 {
 section.personal-info ul li {
     display: flex;
     flex-wrap: wrap;
+    margin: 1em 0em;
 }
 
 section.personal-info ul li input[type="text"],
@@ -94,10 +95,6 @@ section button {
 
     header h1 {
         padding: 1.5em 0em 0.5em;
-    }
-
-    section.personal-info ul li {
-        margin: 1em 0em;
     }
 
     section.personal-info ul li label {
