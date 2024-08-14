@@ -1,0 +1,178 @@
+/*CSS document*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+/*Global changes*/
+body {
+    font-family: sans-serif;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: bold;
+    font-family: serif;
+    color: #557799;
+}
+
+p {
+    color: #000000;
+}
+
+div.container {
+    margin: auto;
+    max-width: 40em;
+}
+
+header {
+    padding: 1em 0.5em 1.5em;
+}
+
+img.logo {
+    margin: 0em 0em 1em;
+    max-width: 6.5em;
+}
+
+nav ul li{
+    list-style-type: none;
+    font-weight: bold;
+    padding: 0em 0em 0.25em;
+}
+
+nav ul li a {
+    color: #557799;
+}
+
+footer {
+    background-color: #557799;
+    width: 100%;
+}
+
+footer p {
+    color: #ffffff;
+    padding: 0.75em 0.5em;
+}
+
+
+/*Only modifies index.html*/
+section.mainstory a h2 {
+    font-size: 3em;
+    padding: 0em 0.15em;
+}
+
+section.mainstory a p {
+    padding: 0em 0.5em 2em;
+}
+
+section.secondary a h2 {
+    font-size: 2em;
+    padding: 0em 0.2em;
+}
+
+section.secondary a p {
+    padding: 0em 0.5em 2em;
+}
+
+section.tertiary {
+    border-top: solid 1px #557799;
+    margin: 0em 0.5em;
+}
+
+section.tertiary h2 {
+    padding: 0.5em 0em 0em;
+}
+
+section.tertiary a h2 {
+    font-size: 1.15em;
+}
+
+section.tertiary a p {
+    padding: 0em 0em 2em;
+}
+
+/*Only modifies mainstory.html*/
+figure figcaption {
+    padding: 0em 0.5em 1em;
+    font-style: italic;
+}
+
+article h2 {
+    font-size: 3em;
+    padding: 0.5em 0.15em 0.5em;
+}
+
+article p {
+    padding: 0em 0.5em 1em;
+}
+
+aside {
+    background-color: #CBCFFF;
+    padding: 1em 0.5em 4em;
+}
+
+aside h2 {
+    font-size: 1.15em;
+}
+
+aside p {
+    padding: 0em 0em 2em;
+}
+
+
+/*Desktop specific changes*/
+@media screen and (min-width: 40em) {
+
+/*Global changes*/
+    header {
+    padding: 1em 0em 1.5em;
+    }
+
+    nav ul li{
+        display: inline;
+        padding: 0em 1em 0em 0em;
+    }
+
+
+/*Only modifies index.html*/
+    section.mainstory a h2 {
+        padding: 0em;
+    }
+
+    section.mainstory a p {
+        padding: 0em 0em 2em;
+    }
+
+    section.secondary a h2 {
+        padding: 0em;
+    }
+
+    section.secondary a p {
+        padding: 0em 0em 2em;
+    }
+
+    section.tertiary {
+        border-top: solid 1px #557799;
+        margin: 0em;
+    }
+
+
+/*Only modifies mainstory.html*/
+figure figcaption {
+    padding: 0em 0em 1em;
+}
+
+article h2 {
+    padding: 0.5em 0em 0.5em;
+}
+
+article p {
+    padding: 0em 0em 1em;
+}
+}
