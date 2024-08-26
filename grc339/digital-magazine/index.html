@@ -1,103 +1,92 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <!-- You can start by deleting this line. Then, you can delete the other comments as you read them. -->
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- You need this to proper scale in actual mobile devices.-->
-        <!-- Don’t forget to link to your CSS here. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" href="style.css"/>
-        <title>Michael Huang</title> <!-- This will be replaced with the actual name of the publication later.  -->
-
-        <!-- Helpful meta tags to fight GitHub aggresive caching-->
+        <title>EvolveEats - Homepage</title>
         <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
         <meta http-equiv="Pragma" content="no-cache" />
         <meta http-equiv="Expires" content="0" />
+        <link rel="stylesheet" href="https://use.typekit.net/krk7qis.css">
 
     </head>
 
     <body>
         <div class="home-container">
 
-            <!-- header is outside the main, but inside the div container. -->
-
-            <!-- For the nav, you can use the pound sign (#) for the value of the href attribute. -->
             <header>
-                <a href="index.html"><img class="logo" src="logo.svg" alt="Black text logo that reads Cool Logo."></a>
+                <a href="index.html"><img class="logo" src="images/evolveEats-logo.svg" alt="blue plate with dark green fork, knife, and spoon with light green text to the right reading Evolve Eats"></a>
                 <nav>
                     <ul>
-                        <li><a href="#">Style</a></li>
-                        <li><a href="#">Music</a></li>
-                        <li><a href="#">Wellbeing</a></li>
-                        <li><a href="#">Sports</a></li>
-                        <li><a href="#">Opinion</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Cooking Techniques</a></li>
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">Community</a></li>
                     </ul>
                 </nav>
             </header>
 
             <main>
-                <section class="mainstory"><!-- Teaser for the main story. You want to give it a class.-->
+                <section class="mainstory">
                     <a href="mainstory.html">
-                        <!-- Here, you’ll include an image in an img element, that will be inside a figure element. You don’t need a caption, but include an empty alt attribute. -->
                         <figure>
-                            <img src="soccer-1.jpg" alt="">
+                            <img src="images/mealprep-cover.jpg" alt="chicken and vegetables inside multiple prep containers">
                         </figure>
-                        <!-- Include the heading (h2) and filler text (p) for the main story. -->
-                        <h2>Story about soccer</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </a>
-                </section>
-
-                <section class="secondary"> <!-- Teaser for a secondary story, with images. You want to give it a different class. -->
-                    <a href="#">
-                        <!-- Here, you’ll include an image in an img element, that will be inside a figure element. You don’t need a caption, but include an empty alt attribute. -->
-                        <figure>
-                            <img src="dance-1.jpg" alt="">
-                        </figure>
-                        <!-- Include the heading (h2, yes h2 again, you can style it different in CSS if you give your section with secondary stories a different class) and filler text (p) for the main story. -->
-                        <h2>Story about dance</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </a>
-                </section>
-
-                <!-- You will need to replicate the section above to have a total of five secondary stories. Include their images and filler content. -->
-
-                <section class="secondary">
-                    <a href="#">
-                        <figure>
-                            <img src="coffee-1.jpg" alt="">
-                        </figure>
-                        <h2>Story about coffee</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h2>Meal Prep Mastery</h2>
+                        <p>Meal prepping is a game-changer for anyone looking to take control of their diet, save time, and stay consistent with their health goals. Whether you’re aiming to build muscle, lose weight, or simply eat cleaner, having a fridge stocked with ready-to-go meals can make all the difference. But for many, the idea of dedicating hours to cooking and portioning meals can feel overwhelming. The good news? With the right strategies and recipes, meal prep can be both easy and enjoyable.</p>
                     </a>
                 </section>
 
                 <section class="secondary">
                     <a href="#">
                         <figure>
-                            <img src="trees-1.jpg" alt="">
+                            <img src="images/kidcooking.jpg" alt="father and daughter cooking together">
                         </figure>
-                        <h2>Story about trees</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h2>Cooking with Kids</h2>
+                        <p>
+                            Cooking with kids is a fun and educational way to spend time together while teaching them important life skills. It sparks their creativity and encourages healthy eating habits. Plus, it makes mealtime a shared adventure the whole family can enjoy.</p>
                     </a>
                 </section>
 
                 <section class="secondary">
                     <a href="#">
                         <figure>
-                            <img src="guitars-1.jpg" alt="">
+                            <img src="images/smoothies.jpg" alt="glass of smoothie made of blueberries">
                         </figure>
-                        <h2>Story about guitars</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h2>Superfood Smoothies</h2>
+                        <p>Superfood smoothies are a delicious and easy way to pack essential nutrients into your daily routine. They're perfect for boosting energy, supporting overall health, and satisfying your taste buds. With endless combinations, you can enjoy a tasty, nutrient-rich drink any time of day.</p>
                     </a>
                 </section>
 
                 <section class="secondary">
                     <a href="#">
                         <figure>
-                            <img src="cars-1.jpg" alt="">
+                            <img src="images/vegetarian.jpg" alt="vegetables and fruit inside multiple prep containers">
                         </figure>
-                        <h2>Story about cars</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h2>Vegetarian Meal Prep</h2>
+                        <p>Vegetarian meal prep is a simple and effective way to ensure you have healthy, plant-based meals ready throughout the week. It helps you stay on track with your dietary goals while exploring a variety of flavors and ingredients.</p>
+                    </a>
+                </section>
+
+                <section class="secondary">
+                    <a href="#">
+                        <figure>
+                            <img src="images/batchcooking.jpg" alt="person preparing multiple prep containers with food">
+                        </figure>
+                        <h2>Batch Cooking Basics</h2>
+                        <p>Batch cooking is an easy way to ensure you have healthy meals ready throughout the week. It helps you stay organized and reduces daily kitchen stress. With a bit of planning, you can enjoy nutritious, home-cooked dishes without the hassle.</p>
+                    </a>
+                </section>
+
+                <section class="secondary">
+                    <a href="#">
+                        <figure>
+                            <img src="images/breakfast.jpg" alt="multiple plates of fruit and nuts with a glass of orange juice">
+                        </figure>
+                        <h2>5-Minute Breakfasts</h2>
+                        <p>A 5-minute breakfast is a quick and easy way to start your day on a nutritious note. It ensures you get a healthy meal even on the busiest mornings. With simple ingredients and minimal prep, you can enjoy a satisfying breakfast in no time.</p>
                     </a>
                 </section>
 
@@ -105,63 +94,58 @@
 
             <aside>
 
-                <section class="tertiary"> <!-- Teaser for a tertiary story, with no images. You want to give it a third class. -->
-                    <a href="#">
-                        <!-- Include the heading (h2, yes h2 again, you can style it different in CSS if you give your section with secondary stories a different class) and filler text (p) for the main story. -->
-                        <h2>Story about surfing</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </a>
-                </section>
-
-                <!-- You will need to replicate the section above to have a total of six tertiary stories in your page, with at least 4 of them with images. -->
-
                 <section class="tertiary">
                     <a href="#">
-                        <h2>Story about surfing</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h2>Cutting Calories, Not Flavor</h2>
+                        <p>Cutting calories doesn’t mean you have to sacrifice flavor or satisfaction. By focusing on nutritious, lower-calorie ingredients, you can enjoy delicious meals while staying on track with your weight loss goals. With a bit of planning, you can create satisfying dishes that help you reach your targets.</p>
                     </a>
                 </section>
 
                 <section class="tertiary">
                     <a href="#">
-                        <h2>Story about hiking</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h2>Healthy Eating Hacks</h2>
+                        <p>Healthy eating hacks make it easier to incorporate nutritious choices into your daily routine. These tips and tricks help you make better food decisions without extra effort or stress. With a few simple adjustments, you can enjoy balanced meals and stay on track with your health goals.
+                </section>
+
+                <section class="tertiary">
+                    <a href="#">
+                        <h2>The Ultimate Guide to Protein</h2>
+                        <p>The Ultimate Guide to Protein is your comprehensive resource for understanding this essential nutrient. It covers everything from the best sources and benefits to how much you need for your health and fitness goals. Dive in to learn how protein supports muscle growth, repair, and overall wellness.</p>
                     </a>
                 </section>
 
                 <section class="tertiary">
                     <a href="#">
-                        <h2>Story about flowers</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h2>Mindful Eating</h2>
+                        <p>Mindful Eating focuses on the practice of paying full attention to your food and eating experience. It helps you develop a healthier relationship with food by fostering awareness of hunger cues, portion sizes, and the flavors and textures of what you eat. Embrace mindful eating to improve digestion, satisfaction, and overall well-being.</p>
                     </a>
                 </section>
 
                 <section class="tertiary">
                     <a href="#">
-                        <h2>Story about candles</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h2>Bulking on a Budget</h2>
+                        <p>Bulking on a Budget shows you how to build muscle without overspending. It offers tips for choosing affordable, nutrient-dense foods and planning meals that maximize your gains while keeping costs low. Learn how to achieve your bulking goals efficiently and economically.</p>
                     </a>
                 </section>
 
                 <section class="tertiary">
                     <a href="#">
-                        <h2>Story about astronomy</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h2>Cooking for One</h2>
+                        <p>Cooking for One provides practical tips and recipes for preparing meals just for yourself. It helps you streamline your cooking process, reduce waste, and enjoy delicious, single-serving dishes. Embrace these strategies to make solo dining enjoyable and hassle-free.</p>
                     </a>
                 </section>
 
                 <section class="tertiary">
                     <a href="#">
-                        <h2>Story about astrology</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h2>Low-Carb Lunches</h2>
+                        <p>Low-Carb Lunches offers delicious and satisfying meal ideas that fit a low-carb lifestyle. It helps you enjoy filling, flavorful dishes without sacrificing your dietary goals. Discover creative ways to keep your lunches both nutritious and low in carbs.</p>
                     </a>
                 </section>
 
             </aside>
 
-            <!-- footer is outside the main, but inside the div container. -->
             <footer>
-                <p>All rights reserved.</p>
+                <p>© All rights reserved. EvolveEats 2024.</p>
             </footer>
 
         </div>

@@ -4,7 +4,10 @@ html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
 
 /*Global changes*/
 body {
-    font-family: sans-serif;
+    font-family: "elza-round-variable", sans-serif;
+    font-variation-settings: "wght" 300;
+    background: #2e4052;
+    color: #1D1D1D;
 }
 
 img {
@@ -17,9 +20,10 @@ a {
 }
 
 h2 {
-    font-weight: bold;
-    font-family: serif;
-    color: #557799;
+    font-family: "santelia-rough-two", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #3f7d20;
 }
 
 p {
@@ -28,7 +32,8 @@ p {
 
 div.container, div.home-container {
     margin: auto;
-    max-width: 40em;
+    max-width: 60em;
+    background: #F7F7F7;
 }
 
 header {
@@ -36,22 +41,21 @@ header {
 }
 
 img.logo {
-    margin: 0em 0em 1em;
-    max-width: 6.5em;
+    margin: 0em 0em 2em;
+    max-width: 15em;
 }
 
 nav ul li{
-    list-style-type: none;
-    font-weight: bold;
+    font-variation-settings: "wght" 600;
     padding: 0em 0em 0.25em;
 }
 
 nav ul li a {
-    color: #557799;
+    color: #2e4052;
 }
 
 footer {
-    background-color: #557799;
+    background-color: #7DB62C;
     width: 100%;
 }
 
@@ -81,7 +85,7 @@ section.secondary a p {
 }
 
 section.tertiary {
-    border-top: solid 1px #557799;
+    border-top: solid 1px #9198a4;
     margin: 0em 0.5em;
 }
 
@@ -99,8 +103,9 @@ section.tertiary a p {
 
 /*Only modifies mainstory.html*/
 figure figcaption {
-    padding: 0em 0.5em 1em;
+    padding: 0.5em 0.5em 1em;
     font-style: italic;
+    color: #445F7A
 }
 
 article h2 {
@@ -108,13 +113,41 @@ article h2 {
     padding: 0.5em 0.15em 0.5em;
 }
 
+article h3 {
+    padding: 1em 0.25em 1em;
+    font-size: 1.5em;
+    font-variation-settings: "wght" 450;
+    color: #445F7A
+}
+
+article h4 {
+    padding: 0em 0.35em 1em;
+    font-size: 1.15em;
+}
+
 article p {
     padding: 0em 0.5em 1em;
 }
 
-aside {
-    background-color: #CBCFFF;
+article ul li {
+    margin: 0em 2em 1em;
+}
+
+article ol li {
+    margin: 0em 2em 1em;
+}
+
+article ul {
+    margin-bottom: 2.5em;
+}
+
+article ol {
+    margin-bottom: 2.5em;
+}
+
+div.container aside {
     padding: 1em 0.5em 4em;
+    border: solid 1px #C9C9C9;
 }
 
 aside h2 {
@@ -132,13 +165,41 @@ aside p {
 /*Global changes*/
     header {
         padding: 1em 0em 1.5em;
+        width: 100%;
+        padding-right: 1em;
+        padding-left: 1em;
+        margin-left: -1em;
+        /* border-bottom: solid 2px #7DB62C; */
+        /* background: #7DB62C; */
     }
 
     nav ul li {
         display: inline;
-        padding: 0em 1em 0em 0em;
+        margin: 0em 2em 0em 0em;
+        position: relative;
     }
 
+    nav ul li::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: #616161;
+        transition: all .3s ease-in-out;
+    }
+
+    nav ul li:hover::before {
+        width: 100%;
+        left: 0;
+    }
+
+
+    footer {
+        width: calc(100% + 2em);
+        margin-left: -1em;
+    }
 
 /*Only modifies index.html*/
     header, footer {
@@ -157,6 +218,18 @@ aside p {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1em;
+    }
+
+    section.mainstory:hover img, section.secondary:hover img, section.tertiary:hover img {
+        filter: brightness(1.05);
+    }
+
+    section.mainstory:hover h2, section.secondary:hover h2, section.tertiary:hover h2 {
+        color: #7DB62C;
+    }
+
+    section.mainstory:hover p, section.secondary:hover p, section.tertiary:hover p {
+        color: #616161;
     }
 
     section.mainstory {
@@ -183,6 +256,7 @@ aside p {
     section.mainstory a h2 {
         padding: 0em;
         flex: 0 0 1em;
+        font-size: 2.5em;
     }
 
     section.mainstory a p {
@@ -212,7 +286,7 @@ aside p {
     section.secondary a h2 {
         padding: 0em;
         flex: 0 0 1em;
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     section.secondary a p {
@@ -227,8 +301,12 @@ aside p {
     }
 
     section.tertiary {
-        border-top: solid 1px #557799;
+        border-top: solid 1px #9198a4;
         margin: 0em;
+    }
+
+    section.tertiary a h2 {
+        font-size: 1.1em;
     }
 
     section.tertiary a p {
@@ -238,7 +316,7 @@ aside p {
 
     /*Only modifies mainstory.html*/
     div.container {
-        max-width: 60em;
+        max-width: 80em;
         padding: 0em 1em;
         display: grid;
         grid-template-columns: 3fr 1fr;
@@ -246,14 +324,35 @@ aside p {
     }
 
     figure figcaption {
-        padding: 0em 0em 1em;
+        padding: 0.5em 0em 1em;
     }
 
     article h2 {
         padding: 0.5em 0em 0.5em;
     }
 
+    article h3 {
+        padding: 1em 0em 1em;
+    }
+
+    article h4 {
+        padding: 0em 0em 1em;
+    }
+
     article p {
         padding: 0em 0em 1em;
     }
+
+    div.container aside section:hover img {
+        filter: brightness(1.05);
+    }
+
+    div.container aside section:hover h2 {
+        color: #7DB62C;
+    }
+
+    div.container aside section:hover p {
+        color: #616161;
+    }
+
 }
