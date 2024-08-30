@@ -227,6 +227,10 @@ nav.gallery label img {
 }
 
 /*Only modifies newsletter.html*/
+main.newsletter img {
+    margin: 0em 0em 2em;
+}
+
 main.newsletter h2 {
     font-size: 3em;
     padding: 0em 0.15em 0em;
@@ -245,11 +249,11 @@ main.newsletter section ul li {
     display: flex;
     flex-wrap: wrap;
     margin: 1em 0em;
+    line-height: 1.75em;
 }
 
 main.newsletter section ul li input[type="text"],
 main.newsletter section ul li input[type="email"],
-main.newsletter section ul li input[type="tel"],
 main.newsletter section ul li select {
 	flex: 1 0 100%;
 	box-sizing: border-box;
@@ -262,12 +266,22 @@ main.newsletter section ul {
     margin: 0em 0em 3em;
 }
 
+main.newsletter section p {
+    color: #F7F7F7;
+    font-family: "elza-round-variable", sans-serif;
+    font-variation-settings: "wght" 600;
+}
+
 main.newsletter section button {
     padding: 0.75em 1em;
     background: #81ad44;
     border: none;
     font-family: "elza-round-variable", sans-serif;
     font-variation-settings: "wght" 300;
+}
+
+main.newsletter section ul.contact {
+    margin-bottom: 5em;
 }
 
 main.newsletter section button a {
@@ -556,4 +570,18 @@ main.newsletter section button a {
         background: #7DB62C;
     }
     
+    main.newsletter section ul.news-type {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0em 0em 5em;
+    }
+
+    main.newsletter section ul.news-type li {
+        flex: 1 0 15em;
+    }
+    
+    main.newsletter img {
+        height: 13em;
+        object-fit: cover;
+    }
 }
