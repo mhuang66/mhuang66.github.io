@@ -538,12 +538,12 @@ main.newsletter section button a {
     
     main.newsletter h2 {
         font-size: 3em;
-        padding: 0em 0.15em 0.5em;
-        text-align: center;
+        padding: 0em 0em 0.5em;
     }
 
     main.newsletter section {
         margin: 0em 0em 8em;
+        margin-right: -1em;
     }
 
     main.newsletter section ul li label {
@@ -564,10 +564,15 @@ main.newsletter section button a {
     main.newsletter section button {
         display: block;
         margin: auto;
+        padding: 1em 1.5em;
     }
 
     main.newsletter section button:hover {
         background: #7DB62C;
+    }
+
+    main.newsletter section button a {
+        font-size: 1.25em;
     }
     
     main.newsletter section ul.news-type {
